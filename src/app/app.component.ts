@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'directivesAngular';
   postArray:Array<string> = ['Post 1', 'Post 2', 'Post 3', 'Post 4', 'Post 5'];
 
-  objArray:Array<object> = [
+  objArray:Array<any> = [
     {id:1, postTitle: 'Post 1'},
     {id:2, postTitle: 'Post 2'},
     {id:3, postTitle: 'Post 3'},
