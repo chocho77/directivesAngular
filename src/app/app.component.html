@@ -28,3 +28,13 @@
   <p>There is no Data to fetch ... </p>
 </ng-template>
 
+
+<div>
+  <button (click)="onClick('step 1')">Step 1</button>
+  <button (click)="onClick('step 2')">Step 2</button>
+  <button (click)="onClick('step 3')">Step 3</button>
+</div>
+
+<div *ngIf="stepForm == 'step 1'">Step1 Form</div>
+<div *ngIf="stepForm == 'step 2'">Step2 Form</div>
+<div *ngIf="stepForm == 'step 3'">Step3 Form</div>

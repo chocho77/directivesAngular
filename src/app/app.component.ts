@@ -9,7 +9,9 @@ export class AppComponent {
   title = 'directivesAngular';
   postArray:Array<string> = ['Post 1', 'Post 2', 'Post 3', 'Post 4', 'Post 5'];
 
-  objArray:Array<any> = []
+  objArray:Array<any> = [];
+
+  stepForm! : string;
 
   constructor(){
     for(let i = 0; i < this.postArray.length; i++){
@@ -25,6 +27,11 @@ export class AppComponent {
   onDelete(post:any) {
     let index = this.objArray.indexOf(post);
     this.objArray.splice(index, 1);
+
+  }
+
+  onClick(status:any) {
+    this.stepForm = status;
 
   }
 
